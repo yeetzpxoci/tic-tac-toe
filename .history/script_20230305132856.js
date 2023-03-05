@@ -54,7 +54,7 @@ const gameBoard = (() => {
     }
 
     return {
-        gameBoard, atIndex, playOn, resetBoard, winner, checkWinner, checkDraw
+        gameBoard, atIndex, playOn, resetBoard, winner, checkWinner
     };
 })();
 
@@ -83,11 +83,6 @@ const game = (() => {
             if (gameBoard.checkWinner() !== "") {
                 displayController.disableSquares();
                 document.getElementById("turn").innerHTML = "Congratz! " + gameBoard.checkWinner() + " has won!"
-            }
-
-            if (gameBoard.checkDraw()) {
-                displayController.disableSquares();
-                document.getElementById("turn").innerHTML = "It's a draw!"
             }
         }
     }

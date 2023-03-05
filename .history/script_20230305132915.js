@@ -85,9 +85,8 @@ const game = (() => {
                 document.getElementById("turn").innerHTML = "Congratz! " + gameBoard.checkWinner() + " has won!"
             }
 
-            if (gameBoard.checkDraw()) {
-                displayController.disableSquares();
-                document.getElementById("turn").innerHTML = "It's a draw!"
+            if (gameBoard.) {
+                
             }
         }
     }
